@@ -1,0 +1,14 @@
+{
+    "email": true, # Send to Email? 
+    "id": 15804669, # Notification ID
+    "mobile": true, # Send to Mobile?
+    "project": { # Project Block
+        "id": 833309769, 
+        "name": "MACK LUSTER Feature Film"
+    }, 
+    "urls": { # URL Block
+        "api": {
+            "notification": "<redacted>"
+        }
+    }
+}

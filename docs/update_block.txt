@@ -1,0 +1,60 @@
+{
+    "body": "<redacted>", # Update body -- includes HTML 
+    "comments_count": 0, # Number of Comments
+    "has_liked": false, # Has the User Liked this Update?
+    "id": 828768, # Update ID
+    "likers": [ # User Blocks for Likers
+        {
+            "avatar": {
+                "medium": "https://s3.amazonaws.com/ksr/avatars/4408092/IMG_5923.medium.jpg?1398871933", 
+                "small": "https://s3.amazonaws.com/ksr/avatars/4408092/IMG_5923.small.jpg?1398871933", 
+                "thumb": "https://s3.amazonaws.com/ksr/avatars/4408092/IMG_5923.thumb.jpg?1398871933"
+            }, 
+            "id": 1897840821, 
+            "name": "Tom", 
+            "urls": {
+                "api": {
+                    "user": "<redacted>"
+                }, 
+                "web": {
+                    "user": "https://www.kickstarter.com/profile/1897840821"
+                }
+            }
+        }, 
+        {
+            "avatar": {
+                "medium": "https://www.kickstarter.com/assets/users/missing_medium.png", 
+                "small": "https://www.kickstarter.com/assets/users/missing_small.png", 
+                "thumb": "https://www.kickstarter.com/assets/users/missing_thumb.png"
+            }, 
+            "id": 1158961464, 
+            "name": "D.W. Moffett", 
+            "urls": {
+                "api": {
+                    "user": "<redacted>"
+                }, 
+                "web": {
+                    "user": "https://www.kickstarter.com/profile/1158961464"
+                }
+            }
+        }
+    ], 
+    "likes_count": 6, # Likes count
+    "next_update_id": 828693, # Next Update ID
+    "project_id": 833309769, # Project ID
+    "public": true, # Public Update?
+    "published_at": 1399044200, # Update publish datetime
+    "sequence": 2, # Sequence Number
+    "title": "MACK LUSTER HAS THEATRICAL DISTRIBUTION!", # Update title
+    "updated_at": 1399097504, # Updated datetime
+    "urls": { # URLs block
+        "api": { # API URLs
+            "comments": "<redacted>", # Comments API URL
+            "update": "<redacted>" # Refresh Update
+        }, 
+        "web": {
+            "update": "https://www.kickstarter.com/projects/mackluster/mack-luster-feature-film/posts/828768" # Web URL of Update
+        }
+    }, 
+    "visible": true # Is the update visible?
+}

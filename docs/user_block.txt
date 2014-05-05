@@ -1,0 +1,43 @@
+{
+    "avatar": {
+        "large": "https://s3.amazonaws.com/ksr/avatars/9284630/MackLuster_PhotoShoot.large.jpg?1397854003", 
+        "medium": "https://s3.amazonaws.com/ksr/avatars/9284630/MackLuster_PhotoShoot.medium.jpg?1397854003", 
+        "small": "https://s3.amazonaws.com/ksr/avatars/9284630/MackLuster_PhotoShoot.small.jpg?1397854003", 
+        "thumb": "https://s3.amazonaws.com/ksr/avatars/9284630/MackLuster_PhotoShoot.thumb.jpg?1397854003"
+    }, 
+    "backed_projects_count": 8, 
+    "biography": "In need of a hero, mankind turns to Mack Luster.\r\n\r\nJared works as a writer/director. Ryan as an actor/artist. They met as athletes at UCLA over fourteen years ago. After graduating, they traded in their jock straps for cameras and paint brushes and have been wheelin' on the gravy train of enlightenment ever since.", 
+    "created_at": 1389229746, 
+    "created_projects_count": 1, 
+    "id": 702610306, 
+    "location": {
+        "country": "US", 
+        "displayable_name": "Los Angeles, CA", 
+        "id": 2442047, 
+        "name": "Los Angeles", 
+        "short_name": "Los Angeles, CA", 
+        "slug": "los-angeles-ca", 
+        "state": "CA", 
+        "urls": {
+            "api": {
+                "nearby_projects": "https://api.kickstarter.com/v1/discover?signature=1399284654.8d93ba59e4d0d651502ae4c4496caaaa2e097352&woe_id=2442047"
+            }, 
+            "web": {
+                "discover": "https://www.kickstarter.com/discover/places/los-angeles-ca", 
+                "location": "https://www.kickstarter.com/locations/los-angeles-ca"
+            }
+        }
+    }, 
+    "name": "Mack Luster", 
+    "slug": "mackluster", 
+    "updated_at": 1399223537, 
+    "urls": {
+        "api": {
+            "created_projects": "https://api.kickstarter.com/v1/users/702610306/projects/created?signature=1399334160.b8b06436c55baf0003031b1848fc45226338ef7e", 
+            "user": "https://api.kickstarter.com/v1/users/702610306?signature=1399334160.7394f25f978920a3b88a763f5e54396c46c55518"
+        }, 
+        "web": {
+            "user": "https://www.kickstarter.com/profile/mackluster"
+        }
+    }
+}

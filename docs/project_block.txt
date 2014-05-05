@@ -1,0 +1,106 @@
+# Skipped a few fields because I'm lazy, see the enriched one for the delta
+
+{
+    "backers_count": 188, # Number of Backers 
+    "blurb": "1980s infused action movie from the creators of Zach Galifianakis's Visioneers. For anybody that wants to be awesome.", # Project Blurb
+    "category": { # Category block
+        "id": 291, 
+        "name": "Action", 
+        "parent_id": 11, 
+        "position": 1, 
+        "slug": "film & video/action", 
+        "urls": {
+            "web": {
+                "discover": "http://www.kickstarter.com/discover/categories/film%20&%20video/action"
+            }
+        }
+    }, 
+    "country": "US", # Project Country
+    "created_at": 1389230320, # Project created datetime
+    "creator": { # Project Creator Block
+        "avatar": {
+            "medium": "https://s3.amazonaws.com/ksr/avatars/9284630/MackLuster_PhotoShoot.medium.jpg?1397854003", 
+            "small": "https://s3.amazonaws.com/ksr/avatars/9284630/MackLuster_PhotoShoot.small.jpg?1397854003", 
+            "thumb": "https://s3.amazonaws.com/ksr/avatars/9284630/MackLuster_PhotoShoot.thumb.jpg?1397854003"
+        }, 
+        "id": 702610306, 
+        "name": "Mack Luster", 
+        "slug": "mackluster", 
+        "urls": {
+            "api": {
+                "user": "<redacted>"
+            }, 
+            "web": {
+                "user": "https://www.kickstarter.com/profile/mackluster"
+            }
+        }
+    }, 
+    "currency": "USD", 
+    "currency_symbol": "$", 
+    "currency_trailing_code": true, 
+    "deadline": 1400658341, 
+    "disable_communication": false, 
+    "friends": [], 
+    "goal": 250000.0, 
+    "id": 833309769, 
+    "is_backing": true, 
+    "is_starred": false, 
+    "launched_at": 1398066341, 
+    "location": {
+        "country": "US", 
+        "displayable_name": "Los Angeles, CA", 
+        "id": 2442047, 
+        "name": "Los Angeles", 
+        "short_name": "Los Angeles, CA", 
+        "slug": "los-angeles-ca", 
+        "state": "CA", 
+        "urls": {
+            "api": {
+                "nearby_projects": "<redacted>"
+            }, 
+            "web": {
+                "discover": "https://www.kickstarter.com/discover/places/los-angeles-ca", 
+                "location": "https://www.kickstarter.com/locations/los-angeles-ca"
+            }
+        }
+    }, 
+    "name": "MACK LUSTER Feature Film", 
+    "photo": {
+        "1024x768": "https://s3.amazonaws.com/ksr/projects/822403/photo-1024x768.jpg?1398554147", 
+        "1536x1152": "https://s3.amazonaws.com/ksr/projects/822403/photo-1536x1152.jpg?1398554147", 
+        "ed": "https://s3.amazonaws.com/ksr/projects/822403/photo-ed.jpg?1398554147", 
+        "full": "https://s3.amazonaws.com/ksr/projects/822403/photo-full.jpg?1398554147", 
+        "little": "https://s3.amazonaws.com/ksr/projects/822403/photo-little.jpg?1398554147", 
+        "med": "https://s3.amazonaws.com/ksr/projects/822403/photo-med.jpg?1398554147", 
+        "small": "https://s3.amazonaws.com/ksr/projects/822403/photo-small.jpg?1398554147", 
+        "thumb": "https://s3.amazonaws.com/ksr/projects/822403/photo-thumb.jpg?1398554147"
+    }, 
+    "pledged": 83316.0, 
+    "slug": "mack-luster-feature-film", 
+    "state": "live", 
+    "state_changed_at": 1398066342, 
+    "updated_at": 1399066010, 
+    "urls": {
+        "api": {
+            "comments": "<redacted>", 
+            "message_creator": "<redacted>", 
+            "project": "<redacted>", 
+            "star": "<redacted>"
+        }, 
+        "web": {
+            "message_creator": "https://www.kickstarter.com/projects/mackluster/mack-luster-feature-film/messages/new?message%5Bto%5D=mackluster", 
+            "project": "https://www.kickstarter.com/projects/mackluster/mack-luster-feature-film", 
+            "project_short": "http://kck.st/1njzVJy"
+        }
+    }, 
+    "video": {
+        "base": "https://d2pq0u4uni88oo.cloudfront.net/projects/822403/video-379041-h264_base.mp4?2014", 
+        "frame": "https://d2pq0u4uni88oo.cloudfront.net/projects/822403/video-379041-h264_base.jpg?2014", 
+        "height": 360, 
+        "high": "https://d2pq0u4uni88oo.cloudfront.net/projects/822403/video-379041-h264_high.mp4?2014", 
+        "id": 379041, 
+        "status": "successful", 
+        "webm": "https://d2pq0u4uni88oo.cloudfront.net/projects/822403/video-379041-webm.webm?2014", 
+        "width": 640
+    }
+}

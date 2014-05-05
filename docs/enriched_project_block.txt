@@ -1,0 +1,141 @@
+{
+    "backers_count": 188, # Number of Backers
+    "backing": { # Pledge Information
+        "amount": 30.0,  # Amount Pledged
+        "backer_id": 999999, # Backer ID
+        "id": 999999, # ID of Backing
+        "pledged_at": 1398635731, # Time pledge was made
+        "project_country": "US", # Country of project
+        "project_id": 833309769, # Project ID
+        "reward_id": 2279348, # Reward ID
+        "sequence": 99, # Don't know
+        "status": "pledged", # Status
+        "urls": { # URL block
+            "web": { # Web block
+                "backing": "<redacted>", # Backing Web URL 
+                "complete": "<redacted>" # Backing complete Web URL
+            }
+        }
+    }, 
+    "blurb": "1980s infused action movie from the creators of Zach Galifianakis's Visioneers. For anybody that wants to be awesome.", # 
+    "category": { # Category block for Project
+        "id": 291, # Category ID
+        "name": "Action", # Category Name
+        "parent_id": 11, # Parent Category ID
+        "position": 1, # Not really sure
+        "slug": "film & video/action", # Category slug
+        "urls": { # Category URLs
+            "web": { # Web URLs
+                "discover": "http://www.kickstarter.com/discover/categories/film%20&%20video/action" # Web URL - Projects of this category
+            }
+        }
+    }, 
+    "comments_count": 6, # Number of comments
+    "country": "US", # Project Country
+    "created_at": 1389230320, # Project create timestamp
+    "creator": { # Creator User Block
+        "avatar": { # Avatar Images
+            "medium": "https://s3.amazonaws.com/ksr/avatars/9284630/MackLuster_PhotoShoot.medium.jpg?1397854003", 
+            "small": "https://s3.amazonaws.com/ksr/avatars/9284630/MackLuster_PhotoShoot.small.jpg?1397854003", 
+            "thumb": "https://s3.amazonaws.com/ksr/avatars/9284630/MackLuster_PhotoShoot.thumb.jpg?1397854003"
+        }, 
+        "id": 702610306, # Creator ID
+        "name": "Mack Luster", # Creator Name
+        "slug": "mackluster", # Creator slug
+        "urls": { # Creator User URLs
+            "api": { # Creator User API URLs
+                "user": "<redacted>" # Get User Block for Creator
+            }, 
+            "web": { # Web URLs
+                "user": "https://www.kickstarter.com/profile/mackluster" # Profile URL
+            }
+        }
+    }, 
+    "currency": "USD", # Project Currency
+    "currency_symbol": "$", # Project Currency Symbol
+    "currency_trailing_code": true, # Trailing currency code?
+    "deadline": 1400658341, # End Datetime for Project
+    "disable_communication": false, # Ignore notifications for this project?
+    "friends": [], # Friends who are backing this project
+    "goal": 250000.0, # Goal of Project
+    "id": 833309769, # Project ID
+    "is_backing": true, # Are you backing
+    "is_starred": false, # Are you starred
+    "launched_at": 1398066341, # Launched Datetime
+    "location": { # Location Block
+        "country": "US", # Location Country
+        "displayable_name": "Los Angeles, CA", # Location Display Name
+        "id": 2442047, # Location ID
+        "name": "Los Angeles", # Location Name
+        "short_name": "Los Angeles, CA", # Location short name
+        "slug": "los-angeles-ca", # Location slug
+        "state": "CA", # Location state
+        "urls": { # URLs block for Location
+            "api": { # API URLs block
+                "nearby_projects": "<redacted>" # API URL for nearby projects
+            }, 
+            "web": { # Web URLs block
+                "discover": "https://www.kickstarter.com/discover/places/los-angeles-ca", # Discover Web URL 
+                "location": "https://www.kickstarter.com/locations/los-angeles-ca" # Location Web URL
+            }
+        }
+    }, 
+    "name": "MACK LUSTER Feature Film", # Project Name
+    "photo": { # Project Photo in different sizes
+        "1024x768": "https://s3.amazonaws.com/ksr/projects/822403/photo-1024x768.jpg?1398554147", 
+        "1536x1152": "https://s3.amazonaws.com/ksr/projects/822403/photo-1536x1152.jpg?1398554147", 
+        "ed": "https://s3.amazonaws.com/ksr/projects/822403/photo-ed.jpg?1398554147", 
+        "full": "https://s3.amazonaws.com/ksr/projects/822403/photo-full.jpg?1398554147", 
+        "little": "https://s3.amazonaws.com/ksr/projects/822403/photo-little.jpg?1398554147", 
+        "med": "https://s3.amazonaws.com/ksr/projects/822403/photo-med.jpg?1398554147", 
+        "small": "https://s3.amazonaws.com/ksr/projects/822403/photo-small.jpg?1398554147", 
+        "thumb": "https://s3.amazonaws.com/ksr/projects/822403/photo-thumb.jpg?1398554147"
+    }, 
+    "pledged": 83316.0, # Total Amount Pledged to Project
+    "rewards": [ # Rewards Array
+        {
+            "backers_count": 0, # Number of backers in this tier
+            "estimated_delivery_on": 1425168000, # Estimated delivery datetime
+            "id": 2279350, # Reward ID
+            "minimum": 70.0, # Minimum amount for this reward tier
+            "project_id": 833309769, # Project ID
+            "reward": "OFFICIAL MACK LUSTER MOVIE POSTER: Upon receiving, frame it over your bed and you'll never have another bad dream for as long as you shall live. - Mack", # Reward Details
+            "shipping": "international", # Shipping details
+            "shipping_amount": "25.0", # Additional amount for special shipping
+            "shipping_applicable": true, # Additional shipping needed?
+            "updated_at": 1398630915 # Reward details updated datetime
+        },
+	
+	# Removed the rest of the rewards 
+    ], 
+    "slug": "mack-luster-feature-film", # Project slug
+    "state": "live", # Project state
+    "state_changed_at": 1398066342, # Project State Changed datetime
+    "updated_at": 1399066010, # Project Updated datetime
+    "updates_count": 2, # Number of Updates
+    "urls": { # URLs Block
+        "api": { # API URLs
+            "comments": "<redacted>", # Comments API URL 
+            "message_creator": "<redacted>", # Message Creator API URL
+            "project": "<redacted>", # Project API URL - used to reload project information?
+            "star": "<redacted>", # Star API URL - Star/Unstar project
+            "updates": "<redacted>" # Updates API URL
+        }, 
+        "web": {
+            "message_creator": "<redacted>", # Message Creator Web URL
+            "project": "<redacted>", # Project Web URL
+            "project_short": "<redacted>", # Project Short Web URL
+            "updates": "<redacted>" # Updates Web URL
+        }
+    }, 
+    "video": { # Project Video URLs and size details
+        "base": "https://d2pq0u4uni88oo.cloudfront.net/projects/822403/video-379041-h264_base.mp4?2014", 
+        "frame": "https://d2pq0u4uni88oo.cloudfront.net/projects/822403/video-379041-h264_base.jpg?2014", 
+        "height": 360, 
+        "high": "https://d2pq0u4uni88oo.cloudfront.net/projects/822403/video-379041-h264_high.mp4?2014", 
+        "id": 379041, 
+        "status": "successful", 
+        "webm": "https://d2pq0u4uni88oo.cloudfront.net/projects/822403/video-379041-webm.webm?2014", 
+        "width": 640
+    }
+}

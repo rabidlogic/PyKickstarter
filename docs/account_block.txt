@@ -1,0 +1,86 @@
+{
+    "avatar": { # Image links for you chosen Avatar
+        "large": "https://www.kickstarter.com/assets/users/missing_large.png", 
+        "medium": "https://www.kickstarter.com/assets/users/missing_medium.png", 
+        "small": "https://www.kickstarter.com/assets/users/missing_small.png", 
+        "thumb": "https://www.kickstarter.com/assets/users/missing_thumb.png"
+    }, 
+    "backed_projects_count": 69, # Number of Projects you have backed
+    "biography": "MMM.... Bio", # Your biography from your profile 
+    "category_wheel": [ # The category wheel - Backed Project Count by Category
+        {
+            "backed_projects_count": 1, # Number of Backed Projects in "Art" Category
+            "category": { # Category Block
+                "id": 1, # Category ID
+                "name": "Art", # Category Name
+                "position": 1, # Category Position in wheel
+                "slug": "art", # Category slug
+                "urls": { # URLs for this category
+                    "web": { # Web URLs for this category
+                        "discover": "http://www.kickstarter.com/discover/categories/art"
+                    }
+                }
+            }, 
+            "color": "0xccc710" # Color code for this category
+        }, 
+	
+	# Removed other categories to shorten file: Comics, Dance, Design, Fashion, Film & Video, Food, Games, Music, Photography, Publishing, Technology, Theater 
+	
+    ], 
+    "created_at": 1353248111, # Date Account was created 
+    "created_projects_count": 0, # Number of Created Projects
+    "happening_newsletter": true, # Are you subscribed to the Happening newsletter?
+    "id": 9999999, # Profile ID
+    "location": { # Location Associated with the Account
+        "country": "US", # Country Code
+        "displayable_name": "RabidLogic, PA", # Display name for Location
+        "id": 999999, # Location ID
+        "name": "RabidLogic", # City Name
+        "short_name": "RabidLogic, PA", # Short name for Location
+        "slug": "rabidlogic-pa", # Slug for location
+        "state": "PA", # State Abbreviation
+        "urls": { # URLs for Location
+            "api": { # API URLs for Location
+                "nearby_projects": "<redacted>" # Project Request URL for API to get projects near this location
+            }, 
+            "web": { # Web URLs for Location
+                "discover": "https://www.kickstarter.com/discover/places/rabidlogic-pa", # Projects Nearby to this Location Web URL
+                "location": "https://www.kickstarter.com/locations/rabidlogic-pa" # Location Web URL
+            }
+        }
+    }, 
+    "name": "RabidLogic", # Display Name for Account 
+    "notify_mobile_of_backings": true, # Mobile Notification Setting - Backings
+    "notify_mobile_of_comments": true, # Mobile Notification Setting - Comments
+    "notify_mobile_of_follower": true, # Mobile Notification Setting - Followers
+    "notify_mobile_of_friend_activity": true, # Mobile Notification Setting - Friend Activity
+    "notify_mobile_of_post_likes": true, # Mobile Notification Setting - Post Likes
+    "notify_mobile_of_updates": true, # Mobile Notification Setting - Updates
+    "notify_of_backings": true, # Notification Setting - Backings
+    "notify_of_comments": true, # Notification Setting - Comments
+    "notify_of_follower": true, # Notification Setting - Followers
+    "notify_of_friend_activity": true, # Notification Setting - Friend Activity
+    "notify_of_post_likes": true, # Notification Setting - Post Likes
+    "notify_of_updates": true, # Notification Setting - Updates
+    "promo_newsletter": true, # Are you subscribed to the promo_newsletter
+    "send_newsletters": true, # Is Kickstarter sending you newsletters? (I'm assuming here. It seems a bit redundant.)
+    "social": true, # Not really sure
+    "starred_projects_count": 71, # Starred Projects Count
+    "unanswered_surveys_count": 0, # Unanswered Surveys Count
+    "unread_messages_count": 0, # Unread Messages Count
+    "updated_at": 1399152426, # Last update to profile
+    "urls": { # URL block for User
+        "api": { # API URLs for User
+            "backed_projects": "<redacted>", # API URL to get backed projects
+            "created_projects": "<redacted>", # API URL to get created projects
+            "notifications": "<redacted>", # API URL to get configured notifications for user 
+            "self": "<redacted>", # Refresh these details 
+            "starred_projects": "<redacted>", # API URL to get starred projects 
+            "user": "<redacted>" # Same as self
+        }, 
+        "web": { # Web URLs for User
+            "user": "https://www.kickstarter.com/profile/9999999" # User Profile
+        }
+    }, 
+    "weekly_newsletter": true # Signed up for the weekly newsletter? 
+}

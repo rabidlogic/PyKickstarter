@@ -1,0 +1,25 @@
+{
+    "author": { # Author block
+        "avatar": { # Avatar images for the Author
+            "medium": "<redacted>", 
+            "small": "<redacted>", 
+            "thumb": "<redacted>"
+        }, 
+        "id": 999999, # Account ID for Author
+        "name": "Mr. Author", # Author Name
+        "urls": { # URLs block
+            "api": { # API URLs block
+                "user": "<redacted>" # API to get user block for author
+            }, 
+            "web": { # Web URLs block
+                "user": "<redacted>" # Web URL for Author Profile
+            }
+        }
+    }, 
+    "body": "I really hope this gets made! Get some updates out there to increase anticipation!", # Comment body
+    "created_at": 1398853438, # Comment created at 
+    "deleted_at": 0, # Comment deleted at
+    "id": 999999, # Comment ID
+    "next_comment_id": 1000000, # ID of next comment
+    "project_id": 833309769 # ID of associated project
+}
