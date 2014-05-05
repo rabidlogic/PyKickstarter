@@ -1,0 +1,16 @@
+#
+# PyKickstarter v2.0
+#
+# Date: May 4, 2014
+# 
+# Written By: RabidLogic
+
+This Python Library gives you access to the Kickstarter API. 
+
+I've mapped most of the API for the logged in user. This gives you access to
+backed projects, starred projects, project updates, notifications, and comments. 
+
+I'm trying to find out how searching works and what functionality is available for
+not logged in user. 
+
+I'll try making a more fancy README tomorrow. I just wanted to get this up there. 
