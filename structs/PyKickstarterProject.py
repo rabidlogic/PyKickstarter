@@ -71,3 +71,13 @@ class PyKickstarterProject(object):
     def get_location(self):
         return PyKickstarterLocation(self.data.location, self.api, self.access_token)
 
+    def get_rewards(self):
+        return self.data.rewards if hasattr(self.data, 'rewards') else []
+
+    def get_backed_reward(self):
+        if self.data.is_backing and hasattr(self.data, 'backing'):
+            r_id = self.data.backing['reward_id']
+            for reward in self.get_rewards():
+                if reward['id'] == r_id:
+                    return reward
+        return None
