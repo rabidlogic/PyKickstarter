@@ -27,7 +27,7 @@ class PyKickstarterUpdatesGenerator(object):
             project = PyKickstarterUpdate(self.updates[idx], self.api, self.access_token)
             yield project
             if (self.more != None and idx == len(self.updates) - 1):
-                data = self.api.request("GET", self.more + "&oauth_token=" + self.access_token)
+                data = self.api.request("GET", self.more + self.access_token)
                 self.initialize(data)
                 idx = 0
             else:
@@ -44,7 +44,10 @@ class PyKickstarterUpdate(object):
         self.data = namedtuple('GenericDict', data.keys())(**data)
 
     def get_comments(self):
-        return PyKickstarterCommentsGenerator(self.api.request("GET", self.data.urls['api']['comments'] + '&oauth_token=' + self.access_token), self.api, self.access_token)
+        return PyKickstarterCommentsGenerator(self.api.request("GET", self.data.urls['api']['comments'] + self.access_token), self.api, self.access_token)
 
     def refresh(self):
-        self.initialize(self.api.request("GET", self.data.urls['api']['update'] + "&oauth_token=" + self.access_token))
+        self.initialize(self.api.request("GET", self.data.urls['api']['update'] + self.access_token))
+
+    def post_comment(self, body):
+        self.api.request("POST", self.data.urls['api']['comments'] + self.access_token, { 'body' : body })

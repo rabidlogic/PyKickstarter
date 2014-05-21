@@ -30,7 +30,7 @@ class PyKickstarterProjectGenerator(object):
             project = PyKickstarterProject(self.projects[idx], self.api, self.access_token)
             yield project
             if (self.more != None and idx == len(self.projects) - 1):
-                data = self.api.request("GET", self.more + "&oauth_token=" + self.access_token)
+                data = self.api.request("GET", self.more + self.access_token)
                 self.initialize(data)
                 idx = 0
             else:
@@ -47,26 +47,26 @@ class PyKickstarterProject(object):
         self.data = namedtuple('GenericDict', data.keys())(**data)
 
     def enrich(self):
-        response = self.api.request("GET", self.data.urls['api']['project'] + '&oauth_token=' + self.access_token)
+        response = self.api.request("GET", self.data.urls['api']['project'] + self.access_token)
         self.initialize(response)
 
     def get_updates(self):
-        return PyKickstarterUpdatesGenerator(self.api.request("GET", self.data.urls['api']['updates'] + '&oauth_token=' + self.access_token), self.api, self.access_token)
+        return PyKickstarterUpdatesGenerator(self.api.request("GET", self.data.urls['api']['updates'] + self.access_token), self.api, self.access_token)
 
     def get_comments(self):
-        return PyKickstarterCommentsGenerator(self.api.request("GET", self.data.urls['api']['comments'] + '&oauth_token=' + self.access_token), self.api, self.access_token)
+        return PyKickstarterCommentsGenerator(self.api.request("GET", self.data.urls['api']['comments'] + self.access_token), self.api, self.access_token)
 
     def get_apis(self):
         return self.data.urls['api']
 
     def star(self):
-        self.api.request("PUT", self.data.urls['api']['star'] + "&oauth_token=" + self.access_token)
+        self.api.request("PUT", self.data.urls['api']['star'] + self.access_token)
 
     def unstar(self):
-        self.api.request("DELETE", self.data.urls['api']['star'] + "&oauth_token=" + self.access_token)
+        self.api.request("DELETE", self.data.urls['api']['star'] + self.access_token)
 
     def get_creator(self):
-        return PyKickstarterUser(self.api.request("GET", self.data.creator['urls']['api']['user'] + "&oauth_token=" + self.access_token), self.api, self.access_token)
+        return PyKickstarterUser(self.api.request("GET", self.data.creator['urls']['api']['user'] + self.access_token), self.api, self.access_token)
 
     def get_location(self):
         return PyKickstarterLocation(self.data.location, self.api, self.access_token)
@@ -81,3 +81,9 @@ class PyKickstarterProject(object):
                 if reward['id'] == r_id:
                     return reward
         return None
+
+    def post_comment(self, body):
+        self.api.request("POST", self.data.urls['api']['comments'] + self.access_token, { 'body' : body })
+
+    def message_creator(self, body):
+        self.api.request("POST", self.data.urls['api']['message_creator'] + self.access_token, { 'body' : body })

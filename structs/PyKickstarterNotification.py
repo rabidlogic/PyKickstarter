@@ -24,4 +24,4 @@ class PyKickstarterNotification(object):
         self.data = namedtuple('GenericDict', data.keys())(**data)
 
     def acknowledge(self):
-        self.api.request("GET", self.data.urls['api']['notification'] + "&oauth_token=" + self.access_token)
+        self.api.request("GET", self.data.urls['api']['notification'] + self.access_token)

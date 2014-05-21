@@ -12,4 +12,4 @@ class PyKickstarterLocation(object):
         self.access_token = access_token
 
     def get_nearby_projects(self):
-        return PyKickstarterProjectGenerator(self.api.request("GET", self.data.urls['api']['neaby_projects'] + "&oauth_token=" + self.access_token), self.api, self.access_token)
+        return PyKickstarterProjectGenerator(self.api.request("GET", self.data.urls['api']['neaby_projects'] + self.access_token), self.api, self.access_token)

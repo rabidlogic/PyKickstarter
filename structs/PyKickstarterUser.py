@@ -15,10 +15,10 @@ class PyKickstarterUser(object):
         self.data = namedtuple('GenericDict', data.keys())(**data)
 
     def get_created_projects(self):
-        return PyKickstarterProjectGenerator(self.api.request("GET", self.data.urls['api']['created_projects'] + "&oauth_token=" + self.access_token), self.api, self.access_token)
+        return PyKickstarterProjectGenerator(self.api.request("GET", self.data.urls['api']['created_projects'] + self.access_token), self.api, self.access_token)
 
     def refresh(self):
-        self.initialize(self.api.request("GET", self.data.urls['api']['user'] + "&oauth_token=" + self.access_token))
+        self.initialize(self.api.request("GET", self.data.urls['api']['user'] + self.access_token))
 
     def get_location(self):
         return PyKickstarterLocation(self.data.location, self.api, self.access_token)        

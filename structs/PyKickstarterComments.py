@@ -27,7 +27,7 @@ class PyKickstarterCommentsGenerator(object):
             project = PyKickstarterComment(self.comments[idx], self.api, self.access_token)
             yield project
             if (self.more != None and idx == len(self.comments) - 1):
-                data = self.api.request("GET", self.more + "&oauth_token=" + self.access_token)
+                data = self.api.request("GET", self.more + self.access_token)
                 self.initialize(data)
                 idx = 0
             else:
@@ -44,4 +44,5 @@ class PyKickstarterComment(object):
         self.data = namedtuple('GenericDict', data.keys())(**data)
 
     def get_author(self):
-        print str(self.api.request("GET", self.data.author['urls']['api']['user'] + "&oauth_token=" + self.access_token, self.access_token))
+        response = self.api.request("GET", self.data.author['urls']['api']['user'] + self.access_token)
+        return PyKickstarterUser(response, self.api, self.access_token)
