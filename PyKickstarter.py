@@ -68,16 +68,16 @@ class PyKickstarter(object):
         self.data = self.get_account({ 'user' : response })
 
     def search_projects(self, search_terms):
-        response = self.api.request("GET", PyKickstarter.API_URLS['search'] + "?" + self.api.encode_get_params({ 'q' : search_terms }) + "&" + self.proper_key())
-        return PyKickstarterProjectGenerator(response, self.api, "&" + self.proper_key())
+        response = self.api.request("GET", PyKickstarter.API_URLS['search'] + "?" + self.api.encode_get_params({ 'q' : search_terms }) + "&" + PyKickstarter.API_KEY)
+        return PyKickstarterProjectGenerator(response, self.api, "&" + PyKickstarter.API_KEY)
 
     def get_categories(self):
-        return self.api.request("GET", PyKickstarter.API_URLS['get_categories'] + "?" + self.proper_key())
+        return self.api.request("GET", PyKickstarter.API_URLS['get_categories'] + "?" + PyKickstarter.API_KEY)
 
     def get_category_projects(self, category_id):
-        response = self.api.request("GET", PyKickstarter.API_URLS['category_search'] % category_id + "?" + self.proper_key())
-        return PyKickstarterProjectGenerator(response, self.api, "&" + self.proper_key())
+        response = self.api.request("GET", PyKickstarter.API_URLS['category_search'] % category_id + "?" + PyKickstarter.API_KEY)
+        return PyKickstarterProjectGenerator(response, self.api, "&" + PyKickstarter.API_KEY)
 
     def get_staff_picks_projects(self):
-        response = self.api.request("GET", PyKickstarter.API_URLS['picks'] + "?" + self.proper_key())
-        return PyKickstarterProjectGenerator(response, self.api, "&" + self.proper_key())
+        response = self.api.request("GET", PyKickstarter.API_URLS['picks'] + "?" + PyKickstarter.API_KEY)
+        return PyKickstarterProjectGenerator(response, self.api, "&" + PyKickstarter.API_KEY)
