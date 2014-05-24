@@ -33,3 +33,7 @@ projects = kick.get_backed_projects()
 for project in projects.next():
 	print project.id
 ```
+
+### To Do List
+
+1. Investigate the unauthenticated features. The project generator can't reload the list. 
