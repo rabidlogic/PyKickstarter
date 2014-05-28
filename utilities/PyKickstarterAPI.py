@@ -6,12 +6,13 @@ import json
 
 class PyKickstarterAPI(object):
     
-    HEADERS = { "Accept" : "application/json; charset=utf-8", "User-Agent" : "PyKickstarter/v1.0" }
+    HEADERS = { "Accept" : "application/json; charset=utf-8", "User-Agent" : "PyKickstarter/v3.0" }
 
-    def __init__(self):
-        self.conn = httplib.HTTPSConnection("api.kickstarter.com")
+    #def __init__(self):
+    #    self.conn = httplib.HTTPSConnection("api.kickstarter.com")
 
     def request(self, method, url, data=None):
+        self.conn = httplib.HTTPSConnection("api.kickstarter.com")
         if (data != None):
             data = json.dumps(data)
         self.conn.request(method, url, data, PyKickstarterAPI.HEADERS)
