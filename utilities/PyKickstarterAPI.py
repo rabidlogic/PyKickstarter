@@ -25,11 +25,9 @@ class PyKickstarterAPI(object):
         if (data != None):
             data = json.dumps(data)
         url = self.add_access_token(url)
-        print(url)
         self.conn.request(method, url, data, PyKickstarterAPI.HEADERS)
         response = self.conn.getresponse()
         response = response.read().decode('utf-8')
-        print(response)
         return json.loads(response)
 
     def add_access_token(self, url):
