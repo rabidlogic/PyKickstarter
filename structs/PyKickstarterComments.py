@@ -2,7 +2,10 @@
 
 from collections import namedtuple
 
-from PyKickstarterUser import *
+try:
+    from PyKickstarterUser import *
+except:
+    from .PyKickstarterUser import *
 
 class PyKickstarterCommentsGenerator(object):
 
@@ -15,7 +18,7 @@ class PyKickstarterCommentsGenerator(object):
         self.set_more(data)
 
     def set_more(self, data):
-        if data['urls']['api'].has_key('more_comments'):
+        if 'more_comments' in data['urls']['api']:
             self.more = data['urls']['api']['more_comments']
         else:
             self.more = None

@@ -2,7 +2,10 @@
 
 from collections import namedtuple
 
-from PyKickstarterProject import *
+try:
+    from PyKickstarterProject import *
+except:
+    from .PyKickstarterProject import *
 
 class PyKickstarterLocation(object):
 

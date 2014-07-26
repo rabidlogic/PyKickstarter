@@ -1,7 +1,5 @@
 #! /usr/bin/python
 
-import json
-
 from collections import namedtuple
 from utilities.PyKickstarterAPI import PyKickstarterAPI
 from structs.PyKickstarterProject import PyKickstarterProjectGenerator
@@ -11,7 +9,7 @@ from structs.PyKickstarterNotification import PyKickstarterNotificationGenerator
 class PyKickstarter(object):
 
     API_ROOT = "https://api.kickstarter.com"
-    API_KEY = ("client_id", "2II5GGBZLOOZAA5XBU1U0Y44BU57Q58L8KOGM7H0E0YFHP3KTG")
+    API_KEY = ( "client_id", "2II5GGBZLOOZAA5XBU1U0Y44BU57Q58L8KOGM7H0E0YFHP3KTG" )
 
     API_URLS = {
             'authenticate' : API_ROOT + "/xauth/access_token",
@@ -34,10 +32,10 @@ class PyKickstarter(object):
         self.user = self.get_account(response)
 
     def get_auth_token(self, data):
-        return data['access_token'] if data.has_key('access_token') else -1
+        return data['access_token'] if 'access_token' in data else -1
 
     def get_account(self, data):
-        return namedtuple('GenericDict', data['user'].keys())(**data['user']) if data.has_key('user') else None
+        return namedtuple('GenericDict', data['user'].keys())(**data['user']) if 'user' in data else None
 
     def get_backed_projects(self):
         response = self.api.request("GET", self.user.urls['api']['backed_projects'])

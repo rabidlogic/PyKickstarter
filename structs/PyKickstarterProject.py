@@ -2,10 +2,16 @@
 
 from collections import namedtuple
 
-from PyKickstarterUpdates import *
-from PyKickstarterComments import *
-from PyKickstarterUser import *
-from PyKickstarterLocation import * 
+try:
+    from PyKickstarterUpdates import *
+    from PyKickstarterComments import *
+    from PyKickstarterUser import *
+    from PyKickstarterLocation import * 
+except:
+    from .PyKickstarterUpdates import *
+    from .PyKickstarterComments import *
+    from .PyKickstarterUser import *
+    from .PyKickstarterLocation import *
 
 class PyKickstarterProjectGenerator(object):
 
@@ -18,7 +24,7 @@ class PyKickstarterProjectGenerator(object):
         self.set_more(data)
 
     def set_more(self, data):
-        if data['urls']['api'].has_key('more_projects'):
+        if 'more_projects' in data['urls']['api']:
             self.more = data['urls']['api']['more_projects']
         else:
             self.more = None
